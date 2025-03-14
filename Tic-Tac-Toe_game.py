@@ -73,7 +73,7 @@ def check_game_over(nested_list):
     symbols = {'x', 'o'}
     flat_list = {cell for row in nested_list for cell in row}
     if flat_list.issubset(symbols):
-        print("Game Over")
+        print("Draw")
         sys.exit()
 
 nested_list = [[1, 2, 3], [4, 'x', 6], [7, 8, 9]]
